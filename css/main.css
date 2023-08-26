@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --body-font-family: 'Montserrat', sans-serif;
+    --primary-color: #38BFF2;
+    --orange-color: #F15525;
+    --body-background-color: #F9F8FD;
+    --light-background-color: #555;
+    --card-background-color: #344348;
+    --default-text-color: #fff;
+    --nav-background-color: rgba(1, 1, 1, 0.8);
+    ----header-background-color: #666;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+button,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    background: transparent;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font-family);
+    background-color: var(--body-background-color);
+    color: var(--default-text-color)
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    min-height: 100vh;
+    overflow: hidden;
+    background-image: url('../img/hero_bg.png');
+    background-color: var(--header-background-color);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top right;
+    padding: 30px 0;
+}
+
+header h1 {
+    font-weight: 600;
+}
+
+nav {
+    background: var(--nav-background-color);
+    backdrop-filter: blur(7.5px);
+    border-radius: 75px;
+    padding: 15px 30px;
+}
+
+.naw_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav menu {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+menu>.item a,
+.naw_row>.item a {
+    display: block;
+    padding: 10px 12px;
+    text-decoration: none;
+    text-align: center;
+    color: var(--default-text-color);
+}
+
+.hero_button::after {
+    content: url('../img/arrow_top_right.svg');
+    margin-left: 20px;
+    vertical-align: top;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    header {
+        background-position: 0px 0px 50px 200px;
+    }
+}
+
+.education {
+    min-height: 100vh;
+    overflow: hidden;
+    background-image: url(../img/Group\ 1179.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 30px 0;
+}
